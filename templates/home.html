@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}SaZSoft Global Marketing Ltd — Wikipedia Editing, Web Development & Graphic Design{% endblock %}
+
+{% block content %}
+
+<!-- Screen 1: Hero -->
+<section class="hero">
+  <div class="eyebrow">Wikipedia Editing &nbsp;·&nbsp; Web Development &nbsp;·&nbsp; Graphic Design</div>
+  <h1>We build the <span class="accent">page,</span><br>the <span class="accent">site,</span> and the <span class="accent">story.</span></h1>
+  <p class="sub">SaZSoft Global Marketing Ltd is a UK-based studio helping individuals and businesses get published, get online, and get seen — done properly, by people who do it every day.</p>
+  <div class="cta-row">
+    <a href="#services" class="btn btn-primary">Explore our services</a>
+    <a href="{{ url_for('contact') }}" class="btn btn-ghost">Contact us</a>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <span class="line"></span>
+  </div>
+</section>
+
+<!-- Screen 2: Services -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="thread"><span class="g"></span><span class="c"></span><span class="v"></span></div>
+      <div class="eyebrow">What we do</div>
+      <h2>Three crafts, one studio.</h2>
+      <p>Every project is handled in-house by a dedicated department — no outsourcing, no guesswork.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <a href="{{ url_for('service_wikipedia') }}" class="service-card gold reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16M4 4l6 16 4-11 4 11 2-16"/></svg>
+        </div>
+        <h3>Wikipedia Editing</h3>
+        <p class="desc">Notability assessment, research, drafting and publication of Wikipedia articles that meet editorial guidelines.</p>
+        <p class="fee">From $599</p>
+        <span class="go">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a href="{{ url_for('service_webdev') }}" class="service-card cyan reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg>
+        </div>
+        <h3>Web Development</h3>
+        <p class="desc">Clean, fast, professionally designed portfolio and business websites — built and handed over, no bloat.</p>
+        <p class="fee">From $2,199</p>
+        <span class="go">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a href="{{ url_for('service_graphic') }}" class="service-card violet reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Graphic Designing</h3>
+        <p class="desc">Logos, brand assets and visual design that make a business look as good as it is.</p>
+        <p class="fee">From $199</p>
+        <span class="go">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

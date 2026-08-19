@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Our Team — SaZSoft Global Marketing Ltd{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="thread"><span class="g"></span><span class="c"></span><span class="v"></span></div>
+    <div class="eyebrow">Our Team</div>
+    <h1>The people behind SaZSoft</h1>
+    <p>One leadership, three departments, all under one roof.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+
+    <div class="ceo-card reveal">
+      <div class="avatar">{{ team.ceo.name[0] }}</div>
+      <h3>{{ team.ceo.name }}</h3>
+      <div class="role">{{ team.ceo.role }}</div>
+    </div>
+
+    {% for dept in team.departments %}
+    <div class="dept {{ dept.color }} reveal">
+      <div class="dept-head">
+        <span class="dot"></span>
+        <div>
+          <h3>{{ dept.title }}</h3>
+          <p>{{ dept.blurb }}</p>
+        </div>
+      </div>
+      <div class="member-grid">
+        {% for m in dept.members %}
+        <div class="member-card">
+          <div class="name">{{ m.name }}</div>
+          <div class="role">{{ m.role }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% endblock %}

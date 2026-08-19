@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}SaZSoft Global Marketing Ltd{% endblock %}</title>
+<meta name="description" content="SaZSoft Global Marketing Ltd — Wikipedia editing, web development and graphic design services.">
+<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon.svg') }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="ambient"></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ url_for('home') }}" class="logo">
+      SaZSoft Global Marketing
+      <span class="tag">Ltd &middot; United Kingdom</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="{{ url_for('team') }}" class="{{ 'active' if active=='team' }}">Team</a>
+      <a href="{{ url_for('service_wikipedia') }}" class="{{ 'active' if active=='wikipedia' }}">Wikipedia Editing</a>
+      <a href="{{ url_for('service_webdev') }}" class="{{ 'active' if active=='webdev' }}">Web Development</a>
+      <a href="{{ url_for('service_graphic') }}" class="{{ 'active' if active=='graphic' }}">Graphic Designing</a>
+      <a href="{{ url_for('contact') }}" class="{{ 'active' if active=='contact' }}">Contact Us</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">SaZSoft Global Marketing</div>
+        <p>A UK-based studio offering Wikipedia editing, web development and graphic design for clients worldwide.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('team') }}">Our Team</a>
+          <a href="{{ url_for('contact') }}">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="{{ url_for('service_wikipedia') }}">Wikipedia Editing</a>
+          <a href="{{ url_for('service_webdev') }}">Web Development</a>
+          <a href="{{ url_for('service_graphic') }}">Graphic Designing</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SaZSoft Global Marketing Ltd. All rights reserved.</span>
+      <div class="thread"><span class="g"></span><span class="c"></span><span class="v"></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

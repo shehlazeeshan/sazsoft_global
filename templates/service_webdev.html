@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Web Development Services — SaZSoft Global Marketing Ltd{% endblock %}
+
+{% block content %}
+
+<section class="page-hero cyan">
+  <div class="wrap">
+    <div class="thread"><span class="g"></span><span class="c"></span><span class="v"></span></div>
+    <div class="eyebrow">Development Department</div>
+    <h1>Web Development</h1>
+    <p>Professionally built portfolio and business websites — designed, developed and handed over to you.</p>
+  </div>
+</section>
+
+<section class="service-detail">
+  <div class="wrap detail-grid">
+    <div>
+      <h2>How it works</h2>
+      <p class="lead">
+        We design and build clean, fast, professional websites for individuals and businesses — the kind of
+        site that presents your work or company properly online. Every project follows the same process
+        below, from discovery through to handover.
+      </p>
+
+      <ol class="process-list">
+        <li>
+          <span class="num">1</span>
+          <div class="body">
+            <h4>Discovery call</h4>
+            <p>We go over what the site needs to do, who it's for, and gather your content, branding and any pages you already have in mind.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <div class="body">
+            <h4>Structure & wireframe</h4>
+            <p>We map out the site's pages and layout so the structure is agreed before any visual design begins.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <div class="body">
+            <h4>Design</h4>
+            <p>A custom visual design is created for your site — colours, typography and layout suited to your brand, not a generic template.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <div class="body">
+            <h4>Development</h4>
+            <p>The site is built to be fast, responsive on every device, and easy to navigate.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">5</span>
+          <div class="body">
+            <h4>Review & revisions</h4>
+            <p>You review the live preview and we make revisions until you're happy with the result.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">6</span>
+          <div class="body">
+            <h4>Handover</h4>
+            <p>The finished site is deployed and handed over to you, along with a short walkthrough of how it works.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <aside class="price-card">
+      <div class="label">Web Development</div>
+      <div class="price"><sup>$</sup>2,199</div>
+      <div class="timeline">
+        <span>Timeline</span>
+        <span>25 – 40 business days</span>
+      </div>
+      <ul class="includes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Custom design (no generic templates)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Fully responsive, all devices</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Up to 5 pages</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Revisions round included</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Deployment & handover</li>
+      </ul>
+      <a href="{{ url_for('contact') }}" class="btn btn-primary">Get in touch</a>
+      <div class="note-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>We build professional portfolio and business websites. We do not build e-commerce websites.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Wikipedia Editing Services — SaZSoft Global Marketing Ltd{% endblock %}
+
+{% block content %}
+
+<section class="page-hero gold">
+  <div class="wrap">
+    <div class="thread"><span class="g"></span><span class="c"></span><span class="v"></span></div>
+    <div class="eyebrow">Editorial Department</div>
+    <h1>Wikipedia Editing</h1>
+    <p>Research, drafting and publication carried out by editors who understand Wikipedia's notability and sourcing standards.</p>
+  </div>
+</section>
+
+<section class="service-detail">
+  <div class="wrap detail-grid">
+    <div>
+      <h2>How it works</h2>
+      <p class="lead">
+        Thank you for your interest in our Wikipedia editing service. Every article we take on goes through
+        the same structured process, from an honest notability check through to publication and initial
+        post-publication support — so you always know exactly where things stand.
+      </p>
+
+      <ol class="process-list">
+        <li>
+          <span class="num">1</span>
+          <div class="body">
+            <h4>Notability assessment</h4>
+            <p>We review the available independent, reliable sources to honestly assess whether the subject meets Wikipedia's notability guidelines before any work begins.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <div class="body">
+            <h4>Research & source verification</h4>
+            <p>Our editors gather and verify secondary sources — press coverage, publications and citations — that will support every claim in the article.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <div class="body">
+            <h4>Article preparation</h4>
+            <p>The article is drafted in a neutral, encyclopedic tone that follows Wikipedia's manual of style and formatting conventions.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <div class="body">
+            <h4>Revisions</h4>
+            <p>You review the draft and we refine it based on your feedback before it goes anywhere near publication.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">5</span>
+          <div class="body">
+            <h4>Publication assistance</h4>
+            <p>We guide the article through submission and publication, responding to any reviewer queries along the way.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">6</span>
+          <div class="body">
+            <h4>Post-publication support</h4>
+            <p>We monitor the article after it goes live and handle initial edits or reviewer follow-ups.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <aside class="price-card">
+      <div class="label">Wikipedia Editing</div>
+      <div class="price"><sup>$</sup>599</div>
+      <div class="timeline">
+        <span>Timeline</span>
+        <span>7 – 25 business days</span>
+      </div>
+      <ul class="includes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Notability assessment</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Full research & source verification</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Article preparation & revisions</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Publication assistance</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Initial post-publication support</li>
+      </ul>
+      <a href="{{ url_for('contact') }}" class="btn btn-primary">Get in touch</a>
+      <div class="note-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>One-time professional fee, no recurring or hidden charges. Timeline varies with research requirements, source availability and subject complexity.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Graphic Designing Services — SaZSoft Global Marketing Ltd{% endblock %}
+
+{% block content %}
+
+<section class="page-hero violet">
+  <div class="wrap">
+    <div class="thread"><span class="g"></span><span class="c"></span><span class="v"></span></div>
+    <div class="eyebrow">Design Department</div>
+    <h1>Graphic Designing</h1>
+    <p>Logos and brand visuals designed to make a business look as sharp as it operates.</p>
+  </div>
+</section>
+
+<section class="service-detail">
+  <div class="wrap detail-grid">
+    <div>
+      <h2>How it works</h2>
+      <p class="lead">
+        Our design team turns a short brief into finished, ready-to-use visual assets — quickly, without
+        losing attention to detail. Here's what the process looks like from brief to final files.
+      </p>
+
+      <ol class="process-list">
+        <li>
+          <span class="num">1</span>
+          <div class="body">
+            <h4>Brief</h4>
+            <p>You tell us what you need — logo, social media assets, brand visuals — along with any style references or preferences.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <div class="body">
+            <h4>Concept design</h4>
+            <p>Our designers put together initial concepts based on your brief for you to react to.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <div class="body">
+            <h4>Refinement</h4>
+            <p>We narrow in on the direction you like best and refine colours, type and layout.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <div class="body">
+            <h4>Final delivery</h4>
+            <p>You receive the final files in the formats you need, ready to use across web and print.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <aside class="price-card">
+      <div class="label">Graphic Designing</div>
+      <div class="price"><sup>$</sup>199</div>
+      <div class="timeline">
+        <span>Timeline</span>
+        <span>1 – 3 business days</span>
+      </div>
+      <ul class="includes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Custom concept design</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> One round of refinements</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Print & web-ready file formats</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> Fast turnaround</li>
+      </ul>
+      <a href="{{ url_for('contact') }}" class="btn btn-primary">Get in touch</a>
+      <div class="note-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>One-time fee per design brief. Larger brand packages can be quoted separately — just ask.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% endblock %}
