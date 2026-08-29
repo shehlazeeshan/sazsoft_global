@@ -63,6 +63,7 @@ TEAM = {
             "members": [
                 {"name": "Muhammad Adnan", "role": "Finance Officer"},
                 {"name": "Zeeshan Ahmed", "role": "Finance Director"},
+                {"name": "Muhammad Riaz", "role": "Finance Director"},
             ],
         },
         {
