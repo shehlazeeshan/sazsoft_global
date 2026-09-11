@@ -53,6 +53,7 @@ TEAM = {
                 {"name": "James Whitmore", "role": "Senior Editor"},
                 {"name": "Christopher Bennett", "role": "Senior Editor"},
                 {"name": "Alexander Brooks", "role": "Senior Editor"},
+                {"name": "Nathan Cole", "role": "Senior Editor"},
             ],
         },
         {
@@ -63,7 +64,6 @@ TEAM = {
             "members": [
                 {"name": "Muhammad Adnan", "role": "Finance Officer"},
                 {"name": "Zeeshan Ahmed", "role": "Finance Director"},
-                {"name": "Muhammad Riaz", "role": "Finance Director"},
             ],
         },
         {
@@ -92,7 +92,15 @@ TEAM = {
                 {"name": "Justin Reed", "role": "Client Representative"},
                 {"name": "Olivia Brooks", "role": "Client Representative"},
                 {"name": "Logan Brooks", "role": "Client Representative"},
-                {"name": "William Harris", "role": "Client Representative"},
+                {"name": "Rebecca Thornton", "role": "Client Representative"},
+                {"name": "Katherine Sinclair", "role": "Client Representative"},
+                {"name": "Robert Sinclair", "role": "Client Representative"},
+                {"name": "Benjamin Hartley", "role": "Client Representative"},
+                {"name": "Sophia Caldwell", "role": "Client Representative"},
+                # {"name": "Nicholas Bradford", "role": "Client Representative"},
+                # {"name": "Abegail Harris", "role": "Client Representative"},
+                # {"name": "Nathaniel Harris", "role": "Client Representative"},
+                # {"name": "Amelia Harris", "role": "Client Representative"},
             ],
         },
     ],
